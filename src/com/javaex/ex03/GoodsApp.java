@@ -35,7 +35,12 @@ public class GoodsApp {
 		System.out.println("상품이름 : " + camera.getName() + ", 가격 : " + camera.getPrice());
 		System.out.println("상품이름 : " + computer.getName() + ", 가격 : " + computer.getPrice());
 		System.out.println("상품이름 : " + cup.getName() + ", 가격 : " + cup.getPrice());
-
+		
+		//showInfo()메소드를 이용하여 다음과 같이 출력하세요.
+		System.out.println("=====showInfo()메소드로 출력=====");
+		camera.showInfo();
+		computer.showInfo();
+		cup.showInfo();
 	}
 
 }

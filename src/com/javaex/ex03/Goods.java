@@ -32,4 +32,11 @@ public class Goods {
 	}
 
 	// 메소드 - 일반
+	// 접근 가능해야하니까 public, 리턴 없으니까 void 
+	public void showInfo() {
+		System.out.println("상품이름 : " + name);
+		System.out.println("가격 : " + price);
+		System.out.println("");
+	}
+	
 }
