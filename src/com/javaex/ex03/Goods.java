@@ -11,6 +11,10 @@ public class Goods {
 	// 생성자
 
 	// 메소드 - gs
+	// 겟터세터 자동생성 단축키 : alt + shift + s
+	// source > Generate Getters and Setters 
+	//mac : option command 랑 s 동시에 누른 후, Generate Getters and Settes선택 
+	
 	public void setName(String name) {
 		// void -> 리턴타입이 없을 때 사용
 		// 실제 움직여야 할 기능
@@ -18,7 +22,15 @@ public class Goods {
 	}
 
 	public void setPrice(int price) {
-		this.price = price;
+		// 코드 추가 가능
+		//조건문을 사용해서 가격 오류 잡을 수 있음
+		if (price < 0) {
+			this.price = 0;
+		} else {
+			this.price = price;
+		}
+
+		//this.price = price;
 	}
 
 	// 결과값을 밖으로 보내야하는 것 --> 리턴
