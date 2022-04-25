@@ -3,15 +3,17 @@ package com.javaex.ex06;
 public class GoodsApp {
 	public static void main(String[] args) {
 
-		// computer
-		Goods computer = new Goods();
-//		computer.setName("LG그램");
-//		computer.setPrice(900000);
 		Goods computer = new Goods("LG그램", 900000);
 
+		// computer
+		// Goods computer = new Goods();
+		// computer.setName("LG그램");
+		// computer.setPrice(900000);
+
 		// camera
-		Goods camera = new Goods();
-		camera.setName("니콘");
+		// Goods camera = new Goods();
+		// camera.setName("니콘");
+		Goods camera = new Goods("니콘");
 		camera.setPrice(400000);
 
 		// cup
@@ -26,7 +28,7 @@ public class GoodsApp {
 		System.out.println(computer.toString());
 		System.out.println(camera.toString());
 		System.out.println(cup.toString());
-		
+
 		System.out.println("");
 		System.out.println("====showInfo()====");
 		// 만들어지고 난 후, showInfo()
