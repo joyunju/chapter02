@@ -29,6 +29,10 @@ public class PointApp {
 		p3.draw();
 		p4.draw();
 		p5.draw();
+		
+		//메소드 오버로딩
+		p1.draw(true); // 그렸습니다.
+		p1.draw(false); // 지웠습니다.
 
 	}
 
