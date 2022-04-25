@@ -17,8 +17,11 @@ public class SongApp {
 		// System.out.println(s01.toString());
 
 		// s02 : 새로운 생성자
-		Song s02 = new Song("거짓말", "BIGBANG", "Always", "G-DRAGON", 2007, 2);
-
+		//Song s02 = new Song("거짓말", "BIGBANG", "Always", "G-DRAGON", 2007, 2);
+		Song s02 = new Song("거짓말", "BIGBANG", "Always", "G-DRAGON", -2007);
+		//s02.setTrack(2);
+		System.out.println(s02.toString());
+		
 		// s02 : BIGBANG
 		// Song s02 = new Song();
 		// s02.setTitle("거짓말");
@@ -29,13 +32,16 @@ public class SongApp {
 		// s02.setTrack(2);
 
 		// s03 : 버스커버스커
-		Song s03 = new Song();
-		s03.setTitle("벚꽃엔딩");
-		s03.setArtist("버스커버스커");
-		s03.setAlbum("버스커버스커1집");
-		s03.setComposer("장범준");
-		s03.setYear(2012);
-		s03.setTrack(4);
+		//Song s03 = new Song();
+		//s03.setTitle("벚꽃엔딩");
+		//s03.setArtist("버스커버스커");
+		//s03.setAlbum("버스커버스커1집");
+		//s03.setComposer("장범준");
+		//s03.setYear(2012);
+		//s03.setTrack(4);
+		//
+		Song s03 = new Song("벚꽃엔딩", "버스커버스커", "버스커버스커1집", "G-DRAGON", 2012, 4);
+		System.out.println(s03.toString());
 
 		// showInfo()메소드를 이용하여 다음과 같이 출력하세요.
 		System.out.println("=====showInfo()메소드로 출력=====");

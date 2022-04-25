@@ -15,14 +15,33 @@ public class Song {
 
 	}
 
-	public Song(String title, String artist, String album, String composer, int year, int track) {
-		super();
+//	public Song(String title, String artist, String album, String composer, int year, int track) {
+//		this.title = title;
+//		this.artist = artist;
+//		this.album = album;
+//		this.composer = composer;
+//		this.year = year;
+//		this.track = track;
+//	}
+
+	public Song(String title, String artist, String album, String composer, int year) {
 		this.title = title;
 		this.artist = artist;
 		this.album = album;
 		this.composer = composer;
-		this.year = year;
-		this.track = track;
+
+		if (year < 0) {
+			this.year = 2022;
+		} else {
+			this.year = year;
+		}
+
+	}
+	
+	public Song(String title, String artist, String album, String composer, int year, int track) {
+		//메로리에 올리는 일
+		this(title, artist, album, composer, year); //파라미터 5개짜리 생성자를 실행
+		this.track=track;
 	}
 
 	// 메소드 - gs
