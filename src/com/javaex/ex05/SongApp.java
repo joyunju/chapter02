@@ -16,14 +16,17 @@ public class SongApp {
 
 		// System.out.println(s01.toString());
 
+		// s02 : 새로운 생성자
+		Song s02 = new Song("거짓말", "BIGBANG", "Always", "G-DRAGON", 2007, 2);
+
 		// s02 : BIGBANG
-		Song s02 = new Song();
-		s02.setTitle("거짓말");
-		s02.setArtist("BIGBANG");
-		s02.setAlbum("Always");
-		s02.setComposer("G-DRAGON");
-		s02.setYear(2007);
-		s02.setTrack(2);
+		// Song s02 = new Song();
+		// s02.setTitle("거짓말");
+		// s02.setArtist("BIGBANG");
+		// s02.setAlbum("Always");
+		// s02.setComposer("G-DRAGON");
+		// s02.setYear(2007);
+		// s02.setTrack(2);
 
 		// s03 : 버스커버스커
 		Song s03 = new Song();
@@ -39,6 +42,11 @@ public class SongApp {
 		s01.showInfo();
 		s02.showInfo();
 		s03.showInfo();
+
+		// test용 출력
+		// System.out.println(s01.toString());
+		// System.out.println(s02.toString());
+		// System.out.println(s03.toString());
 
 	}
 

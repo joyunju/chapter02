@@ -11,9 +11,22 @@ public class Song {
 	private int track;
 
 	// 생성자
+	public Song() {
+
+	}
+
+	public Song(String title, String artist, String album, String composer, int year, int track) {
+		super();
+		this.title = title;
+		this.artist = artist;
+		this.album = album;
+		this.composer = composer;
+		this.year = year;
+		this.track = track;
+	}
 
 	// 메소드 - gs
-	// 자동 생성 : option + command +s > 선택 
+	// 자동 생성 : option + command +s > 선택
 	public String getTitle() {
 		return title;
 	}
@@ -66,6 +79,13 @@ public class Song {
 	public void showInfo() {
 		System.out.println(
 				artist + ", " + title + " (" + album + ", " + year + ", " + track + "번 track, " + composer + " 작곡 )");
+	}
+
+	// test 용
+	@Override
+	public String toString() {
+		return "Song [title=" + title + ", artist=" + artist + ", album=" + album + ", composer=" + composer + ", year="
+				+ year + ", track=" + track + "]";
 	}
 
 }

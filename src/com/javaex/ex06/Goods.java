@@ -8,12 +8,17 @@ public class Goods {
 
 	// 생성자
 	// **생성자의 이름은 클래스(파일명)와 같아야 한다.
-	public Goods() { // 기본 생성자
+	public Goods() { // 기본 생성자 (디폴트 생성자
 		// 초기화 코드
 		// ***메모리에 올리는 일
 		// 로직 작성 가능
 		// 메모리에 올리고 Goods()한번씩 작성해라 로직 추가
-		// System.out.println("Goods()");
+		System.out.println("Goods()");
+	}
+
+	public Goods(String name) {
+		this.name = name;
+		System.out.println("Goods(1)");
 	}
 
 	// Goods("LG그램", 900000); 이런 모양 만들고 싶으니까
@@ -22,10 +27,7 @@ public class Goods {
 		// 추가 로직
 		this.name = name;
 		this.price = price;
-	}
-
-	public Goods(String name) {
-		this.name = name;
+		System.out.println("Goods(2)");
 	}
 
 	// 메소드 - gs
