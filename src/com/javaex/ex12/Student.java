@@ -40,6 +40,14 @@ public class Student extends Person {
 
 	// 메소드 - 일반
 
+	public void showInfo() {
+		// 부모 toString() 그대로 사용
+		// super.toString();
+		System.out.println(super.toString()); // 이건 부모 toString()
+		System.out.println(this.toString()); // 이건 본인 toString()
+		System.out.println("학교 : " + this.schollName);
+	}
+
 //	@Override
 //	public String toString() {
 //		return "Student [schollName=" + schollName + "]";
@@ -48,9 +56,11 @@ public class Student extends Person {
 	// 상속 받았는데 왜 name이 아닌 getName()인 메소드로 호출해야하지?
 	// 이유 : private 이기 때문에 --> 부모 자식 간에도 사용 못함
 	// 부모클래스 필드에서 public String name; -> 으로 바꾸면 name으로 사용가능
+
 	@Override
 	public String toString() {
-		//super.getName() --> 부모한테 있는 getName()을 뜻함 --> this.getNmae()도 가능 
-		return "Student [schollName=" + schollName + ", getName()=" + super.getName() + ", getAge()=" + this.getAge() + "]";
+		// super.getName() --> 부모한테 있는 getName()을 뜻함 --> this.getNmae()도 가능
+		return "Student [schollName=" + schollName + ", getName()=" + super.getName() + ", getAge()=" + this.getAge()
+				+ "]";
 	}
 }
