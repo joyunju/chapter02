@@ -28,7 +28,8 @@ public class PersonApp {
 		Student s04 = new Student("완두콩", 22, "서울고등학교");
 		
 		System.out.println(s04.getName());
-		System.out.println(s04.toString()); // 부모쪽 toString() 사용 
+		System.out.println(s04.toString()); // 부모쪽 toString() 사용
+		//자식 클래스에 부모와 같은 toString()이 있다면 자식 쪽 메소드출력 사용 
 	}
 
 }
