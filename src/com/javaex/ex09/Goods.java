@@ -11,7 +11,7 @@ public class Goods {
 		// 메모리에 올리는 일
 		// 로직
 	}
-
+	
 	public Goods(String name, int price) {
 		// 메모리에 올리는 일(클래스를 인스턴스화)
 		// 추가로직
