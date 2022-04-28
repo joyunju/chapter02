@@ -15,6 +15,10 @@ public class Math {
 	// 메소드 오버로딩
 	// 장점 : 같은 이름의 메소드 사용 가능
 	public int plus(int a, int b) { // 정수 + 정수
+		
+		//int sum = a+b;
+		//return = sum;
+		//위의 두줄을 한줄로 표현
 		return a + b;
 	}
 
