@@ -4,8 +4,8 @@ package com.javaex.ex14;
 public class Circle {
 
 	// 필드
-	private String fillcolor;
-	private String linecolor;
+	private String fillColor;
+	private String lineColor;
 	private int radius;
 
 	// 생성자
@@ -13,28 +13,27 @@ public class Circle {
 		// default
 	}
 
-	public Circle(String fillcolor, String linecolor, int radius) {
-		super();
-		this.fillcolor = fillcolor;
-		this.linecolor = linecolor;
+	public Circle(String fillColor, String linecolor, int radius) {
+		this.fillColor = fillColor;
+		this.lineColor = linecolor;
 		this.radius = radius;
 	}
 
 	// 메소드 - gs
-	public String getFillcolor() {
-		return fillcolor;
+	public String getFillColor() {
+		return fillColor;
 	}
 
-	public void setFillcolor(String fillcolor) {
-		this.fillcolor = fillcolor;
+	public void setFillColor(String fillColor) {
+		this.fillColor = fillColor;
 	}
 
-	public String getLinecolor() {
-		return linecolor;
+	public String getLineColor() {
+		return lineColor;
 	}
 
-	public void setLinecolor(String linecolor) {
-		this.linecolor = linecolor;
+	public void setLineColor(String lineColor) {
+		this.lineColor = lineColor;
 	}
 
 	public int getRadius() {
@@ -45,21 +44,14 @@ public class Circle {
 		this.radius = radius;
 	}
 
-	
-
 	// 메소드 - 일반
 	public void draw() {
-		System.out.println(
-				"[면색 : " + fillcolor + ", 선색 : " + linecolor +
-				", 반지름 : " + radius + "] 원을 그렸습니다."
-				);
+		System.out.println("[면색 : " + fillColor + ", 선색 : " + lineColor + ", 반지름 : " + radius + "] 원을 그렸습니다.");
 	}
-	
-	
-	
+
 	@Override
 	public String toString() {
-		return "Circle [fillcolor=" + fillcolor + ", linecolor=" + linecolor + ", radius=" + radius + "]";
+		return "Circle [fillcolor=" + fillColor + ", linecolor=" + lineColor + ", radius=" + radius + "]";
 	}
 
 }

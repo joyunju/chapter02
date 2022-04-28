@@ -1,25 +1,26 @@
 package com.javaex.ex14;
 
-public class Triangle {
+public class Rectangle {
 
 	// 필드
-	private String fillColor;
-	private String lineColor;
-	private int width;
-	private int height;
+	private String fillColor; // 빨강
+	private String lineColor; // 검정
+	private int width; // 4
+	private int height; // 4
 
 	// 생성자
-	public Triangle() {
+	public Rectangle() {
+		// default
 	}
 
-	public Triangle(String fillColor, String lineColor, int width, int height) {
+	public Rectangle(String fillColor, String lineColor, int width, int height) {
 		this.fillColor = fillColor;
 		this.lineColor = lineColor;
 		this.width = width;
 		this.height = height;
 	}
 
-	// 메서드 - gs
+	// 메소드 - gs
 	public String getFillColor() {
 		return fillColor;
 	}
@@ -52,15 +53,16 @@ public class Triangle {
 		this.height = height;
 	}
 
-	// 메서드 - 일반
+	// 메소드 - 일반
 	public void draw() {
 		System.out.println("[면색 : " + fillColor + ", 선색 : " + lineColor + ", 가로 : " + width + ", 세로 : " + height
-				+ "] 삼각형을 그렸습니다.");
+				+ "] 사각형을 그렸습니다.");
 	}
 
 	@Override
 	public String toString() {
-		return "Triangle [fillcolor=" + fillColor + ", linecolor=" + lineColor + ", width=" + width + ", height="
+		return "Ractangle [fillcolor=" + fillColor + ", linecolor=" + lineColor + ", width=" + width + ", height="
 				+ height + "]";
 	}
+
 }

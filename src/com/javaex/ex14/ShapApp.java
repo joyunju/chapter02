@@ -4,14 +4,14 @@ public class ShapApp {
 	public static void main(String[] args) {
 
 		// 배열 생성
-		Ractangle[] rArray = new Ractangle[2];
+		Rectangle[] rArray = new Rectangle[2];
 		Circle[] cArray = new Circle[2];
 		Triangle[] tArray = new Triangle[2];
 
 		// 사각형 생성
-		Ractangle r01 = new Ractangle("빨강", "검정", 4, 4);
+		Rectangle r01 = new Rectangle("빨강", "검정", 4, 4);
 		// System.out.println(r01.toString());
-		Ractangle r02 = new Ractangle("주황", "검정", 5, 5);
+		Rectangle r02 = new Rectangle("주황", "검정", 5, 5);
 		// System.out.println(r02.toString());
 
 		// 배열에 사각형 추가하기
