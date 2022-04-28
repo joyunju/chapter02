@@ -15,8 +15,8 @@ public class Rectangle extends Shape {
 	public Rectangle(String fillColor, String lineColor, int width, int height) {
 		// super();
 		super(fillColor, lineColor);
-		// ↑ 이렇게 쓰는게 부모 생성자에 if문 등 복잡해질 때 더 좋음 
-		// super.fillColor = fillColor; // 필드 private라 안됨 , protected는 가능 
+		// ↑ 이렇게 쓰는게 부모 생성자에 if문 등 복잡해질 때 더 좋음
+		// super.fillColor = fillColor; // 필드 private라 안됨 , protected는 가능
 		this.width = width;
 		this.height = height;
 		// System.out.println("Rectangle(4)");
@@ -41,15 +41,14 @@ public class Rectangle extends Shape {
 
 	// 메소드 - 일반
 	public void draw() {
-		System.out.println("[면색:" + super.fillColor + ", 선색:" + super.getLineColor() + 
-		                        ", 가로:" + this.width + ", 세로:" + this.height + 
-		                        "] 사각형을 그렸습니다. " );
+		System.out.println("[면색:" + super.fillColor + ", 선색:" + super.getLineColor() + ", 가로:" + this.width + ", 세로:"
+				+ this.height + "] 사각형을 그렸습니다. ");
 	}
 
 	@Override
 	public String toString() {
-		return "Rectangle [width=" + width + ", height=" + height + ", fillColor=" + super.fillColor + ", getLineColor()="
-				+ super.getLineColor() + "]";
+		return "Rectangle [width=" + width + ", height=" + height + ", fillColor=" + super.fillColor
+				+ ", getLineColor()=" + super.getLineColor() + "]";
 	}
 	// fillColor --> Shape 클래스 필드 값이 protected String fillColor;
 	// getLineColor --> Shape 클래스 필드 값이 private String lineColor;

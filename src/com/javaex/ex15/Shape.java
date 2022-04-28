@@ -18,7 +18,7 @@ public class Shape {
 	}
 
 	public Shape(String fillColor, String lineColor) {
-		super();
+		//super();
 		this.fillColor = fillColor;
 		this.lineColor = lineColor;
 		//System.out.println("Shape(파라미터 2개)");
