@@ -58,7 +58,8 @@ public class Ractangle {
 	public void draw() {
 		System.out.println(
 				"[면색 : " + fillcolor + ", 선색 : " + linecolor +
-				", 가로 : " + width + ", 세로 : " + height);
+				", 가로 : " + width + ", 세로 : " + height + "] 사각형을 그렸습니다."
+				);
 	}
 
 	@Override
