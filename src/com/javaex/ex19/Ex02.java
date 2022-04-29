@@ -25,7 +25,11 @@ public class Ex02 {
 		// System.out.println(intArray[3]);
 		// 인덱스 배열이 [0], [1], [2] 까지 있는데 [3] 호출해서 에러 발생
 		// 예외 클래스 명 : ArrayIndexOutOfBoundsException
-
+		
+		
+		for(int i =0; i<intArray.length; i++) {
+			System.out.println(intArray[i]);
+		}
 	}
 
 }
