@@ -23,6 +23,7 @@ public class Shape {
 		this.lineColor = lineColor;
 		//System.out.println("Shape(파라미터 2개)");
 	}
+	
 
 	// 메소드 - gs
 
