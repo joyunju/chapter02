@@ -1,3 +1,4 @@
+//오류 처리
 package com.javaex.ex20;
 
 import java.io.IOException;
@@ -27,7 +28,7 @@ public class MyFile {
 	public String read2(String path) {
 		String result = "";
 		/*
-		 * try { //path에 있는 파일을 읽어서 문자열 만들어준다 //파일이 없을때 throw new IOException(); //파일이
+		 * try { '//path에 있는 파일을 읽어서 문자열 만들어준다 //파일이 없을때 throw new IOException(); //파일이
 		 * 없는 상황을 강제로 발생
 		 * 
 		 * } catch (IOException e) { System.out.println(path + " no file "); } catch
