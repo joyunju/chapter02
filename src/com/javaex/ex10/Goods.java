@@ -7,7 +7,7 @@ public class Goods {
 	private int price;
 	// 스태틱 영영에서 관리해야함 : private int count = 1;
 	public static int count; // static 메모리에 올라간다
-	//static 메소드에서는 this 사용 불가
+	// static 메소드에서는 this 사용 불가
 
 	// 생성자
 	public Goods() {
